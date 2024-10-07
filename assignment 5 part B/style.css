@@ -1,0 +1,80 @@
+.container {
+    display: flex; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+.container > * {
+    flex-basis: 200px; 
+    border: 2px solid firebrick; 
+    flex-grow: 1; 
+}
+
+ul {
+    display: flex; 
+    color: rgb(255, 0, 43); 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.info {
+    display: flex; 
+    flex-direction: column; 
+    height: 300px; 
+    padding: 1rem; 
+}
+
+.box1 > .info {
+    justify-content: space-evenly; 
+}
+
+.box2 > .info {
+    justify-content: space-between; 
+}
+
+.box3 > .info {
+    justify-content: space-around; 
+}
+
+.box4 > .info {
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.box5 > .info {
+    justify-content: center; 
+    align-items: flex-end; 
+}
+
+.box1 ul {
+    justify-content: flex-end; 
+}
+
+.box2 ul {
+    justify-content: space-around;
+}
+
+.box3 ul {
+    justify-content: center; 
+}
+
+.box4 ul {
+    justify-content: space-evenly; 
+}
+
+.box5 ul {
+    justify-content: space-between; 
+}
+
+.box2 ul > * {
+    flex-grow: 1; 
+}
+
+button {
+    background: firebrick; 
+    padding: 0.5rem; 
+    border: none;
+    width: 100%; 
+    color: white; 
+}
